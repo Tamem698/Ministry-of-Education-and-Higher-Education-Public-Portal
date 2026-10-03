@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة خدمات الجمهور | مدرسة عمر بن الخطاب الابتدائية للبنين</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .bg-qatar-maroon {
+      background-color: #8A1538;
+    }
+    .text-qatar-maroon {
+      color: #8A1538;
+    }
+    .border-qatar-maroon {
+      border-color: #8A1538;
+    }
+    .hover\:bg-qatar-maroon-dark:hover {
+      background-color: #6d102c;
+    }
+    .ring-qatar-maroon:focus {
+      --tw-ring-color: #8A1538;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      body {
+        background: #ffffff !important;
+      }
+      .printable-card {
+        box-shadow: none !important;
+        border: 1px solid #999 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-800 antialiased selection:bg-rose-100 selection:text-qatar-maroon">
+
+  <!-- رأس الصفحة الرسمي - وزارة التربية والتعليم والتعليم العالي -->
+  <header class="bg-white border-b-4 border-[#8A1538] shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <!-- شعار الوزارة المطابق للصورة -->
+        <div class="flex items-center gap-4 text-right">
+          <!-- الشعار التوضيحي المطابق للمظهر الرسمي -->
+          <div class="flex items-center gap-3">
+            <div class="text-right">
+              <h1 class="text-lg sm:text-xl font-black text-[#8A1538] leading-tight tracking-tight">
+                وزارة التـربـيــــة والـتـعـلـيــــم والـتـعـلـيــــم الـعــالـــــي
+              </h1>
+              <p class="text-xs sm:text-sm font-bold text-slate-700 tracking-wide">
+                Ministry of Education and Higher Education
+              </p>
+              <p class="text-[11px] font-semibold text-slate-500">
+                دولة قـطــــر • State of Qatar
+              </p>
+            </div>
+            
+            <!-- الرسم الرسمي للشعار القطري (المحمل والنخيل والسيفين) -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0 flex items-center justify-center p-1">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-[#8A1538] fill-current">
+                <!-- شراع المحمل القطري الدو -->
+                <path d="M42 22 C42 22 28 35 25 54 C24 58 26 59 31 58 C37 57 43 55 45 54 C46 51 44 32 42 22 Z" />
+                <path d="M46 32 C46 32 53 45 54 53 C49 53 47 53 46 53 Z" opacity="0.8" />
+                <path d="M22 60 C26 62 48 62 55 58 C55 60 52 64 45 65 C32 66 23 63 22 60 Z" />
+                <!-- شجرتي النخيل -->
+                <path d="M68 20 C64 21 61 24 62 27 C64 28 66 27 68 25 C70 29 74 29 76 27 C78 30 82 28 83 26 C81 24 76 23 74 21 C72 17 68 18 68 20 Z" />
+                <path d="M70 27 L70 54 L72 54 L72 27 Z" stroke="currentColor" stroke-width="1.8" />
+                <path d="M80 32 C77 33 75 35 76 37 C77 38 79 37 81 35 C82 38 85 38 86 36 C88 38 90 37 91 35 C89 33 86 33 84 31 C83 29 80 30 80 32 Z" />
+                <path d="M82 37 L82 54 L84 54 L84 37 Z" stroke="currentColor" stroke-width="1.5" />
+                <!-- أمواج البحر المتعرجة -->
+                <path d="M26 68 Q31 65 36 68 T46 68 T56 68 T66 68 T76 68 T86 68" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <path d="M24 72 Q29 69 34 72 T44 72 T54 72 T64 72 T74 72 T84 72" fill="none" stroke="currentColor" stroke-width="1.8" />
+                <!-- السيفان المتقاطعان في الأسفل -->
+                <path d="M18 78 L82 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M82 78 L18 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <!-- مقبض السيفين التفصيلي -->
+                <circle cx="20" cy="77" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+                <circle cx="80" cy="77" r="3.5" fill="none" stroke="currentColor" stroke-width="2" />
+                <rect x="23" y="70" width="7" height="3" transform="rotate(-32 23 70)" />
+                <rect x="70" y="73" width="7" height="3" transform="rotate(32 70 73)" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- اسم المدرسة والصفة الرسمية -->
+        <div class="flex flex-col md:items-end text-center md:text-left border-t md:border-t-0 md:border-r border-slate-200 pt-2 md:pt-0 md:pr-6">
+          <div class="inline-flex items-center gap-2 bg-rose-50 text-[#8A1538] px-3 py-1 rounded-full text-xs font-bold w-fit mx-auto md:mx-0">
+            <span class="w-2 h-2 rounded-full bg-[#8A1538] animate-pulse"></span>
+            بوابة خدمات الجمهور الرسمية
+          </div>
+          <h2 class="text-base sm:text-lg font-bold text-slate-900 mt-1">
+            مدرسة عمر بن الخطاب الابتدائية للبنين
+          </h2>
+          <p class="text-xs text-slate-500">
+            دولة قطر • العام الأكاديمي 2026/2027
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- نظام الرسائل والتنبيهات المخصصة البديل عن alert -->
+  <div id="toastNotification" class="fixed top-24 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 transform -translate-y-12 opacity-0 pointer-events-none max-w-md w-11/12">
+    <div id="toastContent" class="flex items-center gap-3 p-4 rounded-xl shadow-xl text-white font-medium text-sm">
+      <span id="toastIcon" class="text-xl">⚠️</span>
+      <p id="toastMessage" class="flex-1"></p>
+      <button onclick="hideToast()" class="text-white hover:text-slate-200 text-lg leading-none">&times;</button>
+    </div>
+  </div>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8">
+
+    <!-- ========================================== -->
+    <!-- الشاشة الأولى: تسجيل الدخول (Login View) -->
+    <!-- ========================================== -->
+    <section id="loginSection" class="transition-opacity duration-300">
+      <div class="max-w-xl mx-auto mt-4 sm:mt-8">
+        
+        <!-- بطاقة تسجيل الدخول -->
+        <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+          <!-- ترويسة البطاقة بالعنابي -->
+          <div class="bg-[#8A1538] p-6 text-white text-center relative overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+            <div class="inline-flex p-3 bg-white/15 rounded-2xl mb-3 shadow-inner">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-black">تسجيل دخول الطالب وولي الأمر</h3>
+            <p class="text-rose-100 text-xs sm:text-sm mt-1">
+              مدرسة عمر بن الخطاب الابتدائية للبنين - بوابة نتائج الاختبارات
+            </p>
+          </div>
+
+          <!-- نموذج الدخول -->
+          <div class="p-6 sm:p-8 space-y-6">
+            
+            <!-- رسالة تنبيه الخطأ عند إدخال بيانات غير مسجلة -->
+            <div id="loginErrorAlert" class="hidden p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 text-sm flex items-start gap-3">
+              <svg class="w-5 h-5 text-rose-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <strong class="font-bold block">خطأ في بيانات الحساب!</strong>
+                <span id="loginErrorText">هذا الحساب غير مسجل في كشوفات مدرسة عمر بن الخطاب. يرجى إدخال البريد المسجل في النظام فقط.</span>
+              </div>
+            </div>
+
+            <form id="loginForm" onsubmit="handleLogin(event)" class="space-y-5">
+              
+              <!-- حقل البريد الإلكتروني أو الرقم القطري -->
+              <div>
+                <label for="studentEmail" class="block text-sm font-bold text-slate-700 mb-2">
+                  البريد الإلكتروني المسجل (أو الرقم القطري)
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                    </svg>
+                  </div>
+                  <input 
+                    type="text" 
+                    id="studentEmail" 
+                    name="studentEmail"
+                    required
+                    placeholder="مثال: s.aldosari@students.edu-qatar.example"
+                    class="w-full pr-11 pl-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#8A1538] focus:border-transparent transition-all text-sm font-medium"
+                    dir="ltr"
+                  >
+                </div>
+                <p class="text-xs text-slate-400 mt-1 mr-1">
+                  * يقبل البريد الإلكتروني الرسمي المسجل في المدرسة
+                </p>
+              </div>
+
+              <!-- حقل كلمة المرور -->
+              <div>
+                <label for="studentPassword" class="block text-sm font-bold text-slate-700 mb-2">
+                  كلمة المرور المسجلة
+                </label>
+                <div class="relative">
+                  <div class="absolute inset-y-0 right-0 pr-3.5 flex items-center pointer-events-none text-slate-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  </div>
+                  <input 
+                    type="password" 
+                    id="studentPassword" 
+                    name="studentPassword"
+                    required
+                    placeholder="••••••••"
+                    class="w-full pr-11 pl-11 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#8A1538] focus:border-transparent transition-all text-sm font-medium"
+                    dir="ltr"
+                  >
+                  <button 
+                    type="button" 
+                    onclick="togglePasswordVisibility()" 
+                    class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400 hover:text-slate-600 focus:outline-none"
+                    title="إظهار / إخفاء كلمة المرور"
+                  >
+                    <svg id="eyeIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- زر تسجيل الدخول -->
+              <button 
+                type="submit" 
+                class="w-full py-3.5 px-4 bg-[#8A1538] hover:bg-[#6d102c] text-white font-extrabold rounded-xl shadow-lg shadow-[#8A1538]/20 transition-all flex items-center justify-center gap-2 transform active:scale-[0.99]"
+              >
+                <span>الدخول إلى نتائج الاختبارات</span>
+                <svg class="w-5 h-5 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </button>
+            </form>
+
+            <!-- زر وتنبيه إنشاء الحساب مع التواصل عبر واتساب -->
+            <div class="pt-4 border-t border-slate-200">
+              <div class="bg-amber-50/80 rounded-2xl p-4 border border-amber-200 flex flex-col gap-3">
+                <div class="flex items-start gap-2.5">
+                  <div class="p-1.5 bg-amber-100 text-amber-800 rounded-lg flex-shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    <p class="font-bold text-slate-900">ليس لديك حساب مفعل أو تريد إنشاء حساب جديد؟</p>
+                    <p class="mt-1">
+                      إنشاء الحساب يتطلب مطابقة السجلات المدرسية. للتسجيل يُرجى التواصل مباشرة عبر واتساب مع:
+                      <span class="font-bold text-[#8A1538]">الأستاذ تميم الدوسري (31098549)</span>
+                    </p>
+                  </div>
+                </div>
+
+                <!-- زر الواتساب المباشر -->
+                <button 
+                  type="button" 
+                  onclick="openWhatsAppModal()" 
+                  class="w-full py-2.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition-all"
+                >
+                  <!-- أيقونة واتساب SVG -->
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.045 1.092 1.616.643.572 1.185.748 1.358.835.174.086.275.072.376-.044.101-.116.433-.505.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824z"/>
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.398A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.579 0-3.088-.456-4.379-1.248l-.314-.193-2.955.828.845-2.88-.205-.327A8.172 8.172 0 013.8 12c0-4.521 3.679-8.2 8.2-8.2s8.2 3.679 8.2 8.2-3.679 8.2-8.2 8.2z"/>
+                  </svg>
+                  <span>تواصل عبر واتساب لإنشاء الحساب (31098549)</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- معلومات أمنية وملاحظة الوزارة -->
+        <p class="text-center text-xs text-slate-400 mt-6 leading-relaxed">
+          جميع البيانات محمية وموثقة طبقاً لمعايير وزارة التربية والتعليم والتعليم العالي بدولة قطر. <br>
+          © 2026 مدرسة عمر بن الخطاب الابتدائية للبنين.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- الشاشة الثانية: قسم نتائج الاختبارات فقط -->
+    <!-- ========================================== -->
+    <section id="resultsSection" class="hidden transition-opacity duration-300">
+      
+      <!-- شريط معلومات الطالب المسجل وزر تسجيل الخروج -->
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-6 mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-rose-50 border-2 border-[#8A1538]/20 flex items-center justify-center text-[#8A1538] font-black text-2xl flex-shrink-0">
+            <span id="studentAvatarLetter">س</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h3 id="loggedStudentName" class="text-lg sm:text-xl font-black text-slate-900">سلمان الدوسري</h3>
+              <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-0.5 rounded-full font-bold">طالب مسجل</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-y-1 gap-x-4 text-xs text-slate-500 mt-1">
+              <span><strong>البريد:</strong> <span id="loggedStudentEmail" class="font-mono">s.aldosari@students.edu-qatar.example</span></span>
+              <span><strong>الصف:</strong> <span id="loggedStudentClass">الخامس الابتدائي</span></span>
+              <span><strong>الرقم الأكاديمي:</strong> <span id="loggedStudentAcademicId">2026/0891</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- أزرار الإجراءات -->
+        <div class="flex items-center gap-2 self-end md:self-center no-print">
+          <button 
+            onclick="handleLogout()" 
+            class="px-4 py-2.5 bg-rose-50 hover:bg-rose-100 text-[#8A1538] font-bold rounded-xl text-xs sm:text-sm flex items-center gap-1.5 transition-all"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            <span>تسجيل الخروج</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- لائحة التعليمات والقوانين المدرسية والامتحانية الرسمية (مقفلة ومخفية افتراضياً وتفتح عند النقر) -->
+      <div class="bg-white rounded-3xl shadow-md border border-slate-200 overflow-hidden mb-6 transition-all duration-300">
+        <!-- ترويسة البطاقة القابلة للضغط للفتح والقفل -->
+        <button 
+          type="button" 
+          onclick="toggleRulesSection()" 
+          class="w-full bg-[#8A1538] hover:bg-[#73122f] p-5 text-white flex items-center justify-between transition-colors focus:outline-none cursor-pointer"
+          aria-expanded="false"
+        >
+          <div class="flex items-center gap-3 text-right">
+            <div class="p-2 bg-white/10 rounded-xl flex-shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-black flex items-center gap-2">
+                <span>لائحة التعليمات والقوانين المدرسية والامتحانية</span>
+                <span id="rulesLockBadge" class="text-[11px] bg-white/20 text-rose-100 font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+                  <span id="rulesLockIcon">🔒</span> <span id="rulesLockText">مقفل - اضغط للفتح</span>
+                </span>
+              </h3>
+              <p class="text-xs text-rose-200 mt-0.5">وزارة التربية والتعليم والتعليم العالي • انقر هنا لعرض أو إغلاق اللائحة</p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-2 flex-shrink-0 mr-3">
+            <span class="text-xs font-bold bg-white/15 px-3 py-1.5 rounded-xl hidden sm:inline-block">انقر للعرض</span>
+            <svg id="rulesChevron" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </button>
+
+        <!-- محتوى التعليمات والقوانين (مخفي افتراضياً ولا يظهر إلا عند الضغط) -->
+        <div id="rulesContent" class="hidden p-6 border-t border-slate-100 transition-all duration-300">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-slate-700">
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100">
+              <span class="w-6 h-6 rounded-lg bg-[#8A1538]/10 text-[#8A1538] font-black flex items-center justify-center flex-shrink-0 text-xs">١</span>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-0.5">سرية البيانات والحساب</h4>
+                <p class="text-slate-600 leading-relaxed">بيانات الدخول شخصية وخاصة بولي الأمر والطالب، ويُمنع تداولها أو مشاركتها لضمان حماية السجلات المدرسية.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100">
+              <span class="w-6 h-6 rounded-lg bg-[#8A1538]/10 text-[#8A1538] font-black flex items-center justify-center flex-shrink-0 text-xs">٢</span>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-0.5">اعتماد كشوفات الاختبارات بصيغة PDF</h4>
+                <p class="text-slate-600 leading-relaxed">تُعد كشوفات الدرجات المرفوعة بصيغة PDF هي الوثيقة المعتمدة بعد ختمها وتوقيعها من إدارة المدرسة ولجان الكنترول.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100">
+              <span class="w-6 h-6 rounded-lg bg-[#8A1538]/10 text-[#8A1538] font-black flex items-center justify-center flex-shrink-0 text-xs">٣</span>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-0.5">فترة مراجعة الدرجات والتظلمات</h4>
+                <p class="text-slate-600 leading-relaxed">يحق لولي الأمر مراجعة إدارة المدرسة خلال مدة أقصاها (٣) أيام عمل من تاريخ صدور وإدراج ملف كشف النتائج.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-100">
+              <span class="w-6 h-6 rounded-lg bg-[#8A1538]/10 text-[#8A1538] font-black flex items-center justify-center flex-shrink-0 text-xs">٤</span>
+              <div>
+                <h4 class="font-bold text-slate-900 mb-0.5">قوانين الانضباط والسلوك الصفي</h4>
+                <p class="text-slate-600 leading-relaxed">تخضع كافة تقييمات الاختبارات للائحة السلوك والتقويم المدرسي الصادرة عن وزارة التربية والتعليم والتعليم العالي بدولة قطر.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- قسم نتائج الاختبارات (مقفل ومخفي افتراضياً ويفتح عند النقر) -->
+      <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden printable-card">
+        
+        <!-- ترويسة قسم النتائج القابلة للنقر للفتح والإغلاق -->
+        <button 
+          type="button" 
+          onclick="toggleResultsSection()" 
+          class="w-full bg-[#8A1538] hover:bg-[#73122f] p-6 text-white flex flex-col sm:flex-row items-center justify-between gap-4 transition-colors focus:outline-none cursor-pointer text-right"
+          aria-expanded="false"
+        >
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-lg text-xs font-bold mb-1">
+              <span>القسم المعتمد: كشف نتائج الاختبارات الرسمية</span>
+              <span id="resultsLockBadge" class="bg-white/25 text-rose-100 px-2 py-0.5 rounded-full inline-flex items-center gap-1 text-[11px]">
+                <span id="resultsLockIcon">🔒</span> <span id="resultsLockText">مقفل - اضغط للفتح</span>
+              </span>
+            </div>
+            <h2 class="text-xl sm:text-2xl font-black">
+              كشف درجات ونتائج الاختبارات
+            </h2>
+            <p class="text-rose-100 text-xs sm:text-sm mt-0.5">
+              مدرسة عمر بن الخطاب الابتدائية للبنين • انقر هنا لفتح أو إغلاق كشف النتائج
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <!-- حالة الاعتماد الرسمي -->
+            <div class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-xl border border-white/20">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-300 animate-pulse"></span>
+              <span class="text-xs font-bold text-white">الملف قيد المراجعة</span>
+            </div>
+
+            <!-- سهم التوسيع والتصغير -->
+            <div class="p-2 bg-white/10 rounded-xl flex items-center justify-center">
+              <svg id="resultsChevron" class="w-5 h-5 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
+        </button>
+
+        <!-- محتوى عرض ملف النتائج (مغلق ومخفي افتراضياً ولا يظهر إلا بعد النقر) -->
+        <div id="resultsContentArea" class="hidden transition-all duration-300">
+          <div class="p-6 sm:p-10 border-t border-slate-100">
+
+            <!-- الحالة الأولى: الملف فارغ حالياً (لا يمكن للطالب الرفع نهائياً) -->
+            <div id="resultsEmptyNotice" class="border-2 border-dashed border-slate-300 rounded-3xl p-8 sm:p-14 text-center bg-slate-50/70 flex flex-col items-center justify-center">
+              <div class="w-20 h-20 bg-rose-50 border border-[#8A1538]/20 rounded-3xl flex items-center justify-center text-[#8A1538] mb-4 shadow-inner">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              
+              <span class="px-3.5 py-1 bg-amber-100 text-amber-900 rounded-full text-xs font-black mb-3">
+                الملف فارغ حالياً
+              </span>
+
+              <h3 class="text-lg sm:text-xl font-black text-slate-800 mb-2">
+                لم يتم إدراج ملف كشف النتائج حتى الآن
+              </h3>
+              
+              <p class="text-xs sm:text-sm text-slate-500 max-w-lg mx-auto leading-relaxed mb-4">
+                نحيطكم علماً بأن ملف نتائج الاختبارات فارغ حالياً ويجري تدقيقه واعتماده رسمياً من قبل لجان الكنترول وإدارة مدرسة عمر بن الخطاب. سيظهر ملف الـ PDF المعتمد هنا فور نشره من قِبل إدارة المدرسة.
+              </p>
+
+              <div class="inline-flex items-center gap-2 px-4 py-2 bg-slate-200/80 rounded-xl text-xs font-bold text-slate-700">
+                <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                </svg>
+                <span>رفع وتعديل النتائج مقتصر حصراً على إدارة المدرسة المصرح لها</span>
+              </div>
+            </div>
+
+            <!-- الحالة الثانية: إطار عرض ملف الـ PDF (يتم تفعيله فقط عندما تضع ملف PDF) -->
+            <div id="resultsPdfViewer" class="hidden flex-col gap-4">
+              <div class="flex items-center justify-between p-3 bg-slate-100 rounded-2xl border border-slate-200">
+                <div class="flex items-center gap-3">
+                  <div class="p-2 bg-[#8A1538] text-white rounded-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="font-bold text-slate-900 text-sm block">كشف_درجات_الاختبارات_المعتمد.pdf</span>
+                    <span class="text-xs text-emerald-700 font-bold">وثيقة معتمدة ومختومة رسمياً</span>
+                  </div>
+                </div>
+                <a 
+                  id="openPdfExternalBtn" 
+                  href="#" 
+                  target="_blank" 
+                  class="px-3 py-1.5 bg-white hover:bg-slate-50 border border-slate-300 rounded-lg text-xs font-bold text-slate-700 flex items-center gap-1.5 transition-all shadow-sm"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  <span>عرض بملء الشاشة</span>
+                </a>
+              </div>
+
+              <!-- إطار العرض الحي للملف المعتمد -->
+              <div class="w-full h-[700px] rounded-2xl overflow-hidden border border-slate-300 bg-slate-100 shadow-inner">
+                <iframe 
+                  id="officialPdfFrame" 
+                  src="" 
+                  class="w-full h-full border-0"
+                  title="كشف نتائج الاختبارات الرسمي بصيغة PDF"
+                ></iframe>
+              </div>
+            </div>
+
+            <!-- التواقيع والاعتمادات الرسمية -->
+            <div class="mt-8 pt-6 border-t border-dashed border-slate-300 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+              
+              <div class="flex flex-col items-center">
+                <span class="text-xs text-slate-500 font-bold mb-6">مسؤول لجان الكنترول</span>
+                <div class="w-32 border-b-2 border-slate-300 mb-2"></div>
+                <span class="text-xs text-slate-400">التوقيع والاعتماد</span>
+              </div>
+
+              <!-- ختم المدرسة المعتمد التوضيحي -->
+              <div class="flex flex-col items-center justify-center">
+                <div class="w-24 h-24 rounded-full border-2 border-dashed border-[#8A1538] flex flex-col items-center justify-center p-2 text-[#8A1538] rotate-[-6deg] opacity-80">
+                  <span class="text-[9px] font-bold">مدرسة عمر بن الخطاب</span>
+                  <span class="text-[8px]">الابتدائية للبنين</span>
+                  <span class="text-[10px] font-black my-0.5">ختم الكنترول</span>
+                  <span class="text-[7px]">دولة قطر</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center">
+                <span class="text-xs text-slate-500 font-bold mb-6">مدير المدرسة</span>
+                <div class="w-32 border-b-2 border-slate-300 mb-2"></div>
+                <span class="text-xs text-slate-400">الاعتماد النهائي</span>
+              </div>
+
+            </div>
+
+            <!-- معلومات إضافية للتواصل والدعم -->
+            <div class="mt-8 p-4 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-3 no-print">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-[#8A1538]"></span>
+                <span>لأي استفسار بخصوص الحساب أو موعد نشر النتائج، تواصل مع أ. تميم الدوسري: <strong>31098549</strong></span>
+              </div>
+              <button 
+                onclick="openWhatsAppModal()" 
+                class="text-emerald-700 hover:text-emerald-800 font-bold underline flex items-center gap-1"
+              >
+                <span>مراسلة واتساب</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- نافذة التواصل عبر واتساب (Modal) لإنشاء الحساب -->
+  <div id="whatsappModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative animate-in fade-in zoom-in duration-200">
+      
+      <!-- زر إغلاق -->
+      <button 
+        onclick="closeWhatsAppModal()" 
+        class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full flex items-center justify-center hover:bg-slate-100 transition-colors"
+      >
+        &times;
+      </button>
+
+      <!-- محتوى النافذة -->
+      <div class="text-center">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.586-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.353.101.173.45 1.045 1.092 1.616.643.572 1.185.748 1.358.835.174.086.275.072.376-.044.101-.116.433-.505.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.073.043.419-.101.824z"/>
+            <path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.436 5.176L2 22l4.981-1.398A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.579 0-3.088-.456-4.379-1.248l-.314-.193-2.955.828.845-2.88-.205-.327A8.172 8.172 0 013.8 12c0-4.521 3.679-8.2 8.2-8.2s8.2 3.679 8.2 8.2-3.679 8.2-8.2 8.2z"/>
+          </svg>
+        </div>
+
+        <h3 class="text-xl font-black text-slate-900 mb-1">
+          طلب إنشاء حساب جديد للطالب
+        </h3>
+        <p class="text-xs text-slate-500 mb-4">
+          مدرسة عمر بن الخطاب الابتدائية للبنين
+        </p>
+
+        <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-5 text-right text-xs leading-relaxed space-y-2">
+          <p class="text-slate-700">
+            لإنشاء حساب أو تفعيل بريد إلكتروني جديد، يرجى إرسال الآتي عبر تطبيق واتساب:
+          </p>
+          <ul class="list-disc list-inside space-y-1 text-slate-600 pr-1">
+            <li>اسم الطالب الثلاثي أو الرباعي.</li>
+            <li>الرقم الشخصي القطري (QID).</li>
+            <li>الصف والشعبة الدراسية.</li>
+          </ul>
+          <div class="pt-2 border-t border-slate-200 flex items-center justify-between text-xs font-bold text-slate-800">
+            <span>المسؤول المباشر:</span>
+            <span class="text-[#8A1538]">الأستاذ تميم الدوسري</span>
+          </div>
+          <div class="flex items-center justify-between text-xs font-bold text-slate-800">
+            <span>رقم التواصل / واتساب:</span>
+            <span class="font-mono text-emerald-700 font-extrabold text-sm" dir="ltr">+974 31098549</span>
+          </div>
+        </div>
+
+        <!-- أزرار الإجراءات -->
+        <div class="space-y-2">
+          <a 
+            id="whatsappDirectLink"
+            href="https://wa.me/97431098549?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%A3%D8%B3%D8%AA%D8%A7%D8%B0%20%D8%AA%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%AF%D9%88%D8%D8%B3%D8%B1%D9%8A%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A5%D9%86%D8%B4%D8%A7%D8%A1%20%D8%AD%D8%B3%D8%A7%D8%A8%20%D8%AC%D8%AF%D9%8A%D8%AF%20%D9%84%D9%84%D8%B7%D8%A7%D9%84%D8%A8%20%D9%81%D9%8A%20%D8%A8%D9%88%D8%A7%D8%A8%D8%A9%20%D9%85%D8%AF%D8%B1%D8%B3%D8%A9%20%D8%B9%D9%85%D8%B1%20%D8%A8%D9%86%20%D8%A7%D9%84%D8%AE%D8%B7%D8%A7%D8%A8%20%D8%A7%D9%84%D8%A7%D8%A8%D8%AA%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9%20%D9%84%D9%84%D8%A8%D9%86%D9%8A%D9%86." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-black text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 transition-all"
+          >
+            <span>فتح المحادثة في واتساب الآن</span>
+            <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </a>
+
+          <button 
+            type="button" 
+            onclick="copyPhoneNumber()" 
+            class="w-full py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-bold text-xs transition-colors flex items-center justify-center gap-1.5"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+            </svg>
+            <span>نسخ الرقم (31098549)</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- تذييل الصفحة -->
+  <footer class="bg-white border-t border-slate-200 py-6 text-center text-xs text-slate-500 no-print">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#8A1538]"></span>
+        <span class="font-bold text-slate-700">مدرسة عمر بن الخطاب الابتدائية للبنين</span>
+        <span>• بوابة خدمات الجمهور</span>
+      </div>
+      <div>
+        <span>إشراف إدارة المدرسة والتسجيل • للتواصل المباشر مع أ. تميم الدوسري: </span>
+        <span class="font-bold font-mono text-[#8A1538]">31098549</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /**
+     * قاعدة بيانات الطلاب المسجلين رسمياً في مدرسة عمر بن الخطاب الابتدائية للبنين
+     * (مأخوذة ومطابقة تماماً من الصورة المرفقة من المستخدم)
+     */
+    const REGISTERED_STUDENTS = [
+      {
+        name: "سلمان الدوسري",
+        email: "s.aldosari@students.edu-qatar.example",
+        password: "Salman@2026Q",
+        classGrade: "الصف الخامس الابتدائي - شعبة 2",
+        academicId: "2026/0142",
+        qid: "31563400112"
+      },
+      {
+        name: "محمد الدوسري",
+        email: "m.aldosari@students.edu-qatar.example",
+        password: "Mohammed@26Q",
+        classGrade: "الصف السادس الابتدائي - شعبة 1",
+        academicId: "2026/0285",
+        qid: "31463400234"
+      },
+      {
+        name: "عبدالله علي",
+        email: "a.ali@students.edu-qatar.example",
+        password: "Abdullah#526",
+        classGrade: "الصف الخامس الابتدائي - شعبة 4",
+        academicId: "2026/0391",
+        qid: "31563400356"
+      },
+      {
+        name: "أحمد علي أحمد",
+        email: "ahmed.ali@students.edu-qatar.example",
+        password: "Ahmed@5A26",
+        classGrade: "الصف السادس الابتدائي - شعبة 3",
+        academicId: "2026/0417",
+        qid: "31463400478"
+      }
+    ];
+
+    /**
+     * ملف النتائج المعتمد (فارغ حالياً):
+     * عندما ترسل لي رابط أو ملف الـ PDF في الدردشة، سأقوم بوضعه هنا مباشرة
+     */
+    const OFFICIAL_RESULTS_PDF_URL = ""; 
+
+    let currentLoggedInStudent = null;
+
+    // معالجة تسجيل الدخول والتحقق من أن الطالب مسجل في القائمة
+    function handleLogin(event) {
+      event.preventDefault();
+      
+      const emailInput = document.getElementById("studentEmail").value.trim().toLowerCase();
+      const passwordInput = document.getElementById("studentPassword").value.trim();
+      const errorAlert = document.getElementById("loginErrorAlert");
+      const errorText = document.getElementById("loginErrorText");
+
+      // البحث عن الطالب في السجلات المسجلة (بالبريد أو الرقم القطري)
+      const matchedStudent = REGISTERED_STUDENTS.find(student => {
+        const emailMatch = student.email.toLowerCase() === emailInput;
+        const qidMatch = student.qid === emailInput;
+        return (emailMatch || qidMatch);
+      });
+
+      // التحقق الصارم: إذا كان غير مسجل أو كلمة المرور غير صحيحة
+      if (!matchedStudent) {
+        errorAlert.classList.remove("hidden");
+        errorText.innerText = "خطأ: هذا الحساب غير مسجل في كشوفات مدرسة عمر بن الخطاب. يرجى التواصل عبر واتساب مع أ. تميم الدوسري (31098549) لإنشاء حساب جديد.";
+        showToast("خطأ: الحساب غير مسجل في النظام!", "error");
+        return;
+      }
+
+      if (matchedStudent.password !== passwordInput) {
+        errorAlert.classList.remove("hidden");
+        errorText.innerText = `خطأ: كلمة المرور المدخلة غير صحيحة للطالب (${matchedStudent.name}). يرجى التأكد من كلمة المرور المسجلة.`;
+        showToast("خطأ: كلمة المرور غير متطابقة!", "error");
+        return;
+      }
+
+      // الدخول بنجاح
+      errorAlert.classList.add("hidden");
+      currentLoggedInStudent = matchedStudent;
+      showStudentPortal(matchedStudent);
+      showToast(`مرحباً بك يا ${matchedStudent.name}، تم تسجيل الدخول بنجاح`, "success");
+    }
+
+    // عرض صفحة النتائج وتحديث معلومات الطالب
+    function showStudentPortal(student) {
+      document.getElementById("loginSection").classList.add("hidden");
+      document.getElementById("resultsSection").classList.remove("hidden");
+
+      document.getElementById("loggedStudentName").innerText = student.name;
+      document.getElementById("loggedStudentEmail").innerText = student.email;
+      document.getElementById("loggedStudentClass").innerText = student.classGrade;
+      document.getElementById("loggedStudentAcademicId").innerText = student.academicId;
+      document.getElementById("studentAvatarLetter").innerText = student.name.trim().charAt(0);
+
+      // فحص حالة ملف الـ PDF: إذا كان فارغاً يظهر تنبيه الانتظار، وإذا وُضِع في الكود يظهر مباشرة
+      const emptyNotice = document.getElementById("resultsEmptyNotice");
+      const pdfViewer = document.getElementById("resultsPdfViewer");
+      const pdfFrame = document.getElementById("officialPdfFrame");
+      const externalLink = document.getElementById("openPdfExternalBtn");
+
+      if (OFFICIAL_RESULTS_PDF_URL && OFFICIAL_RESULTS_PDF_URL.trim() !== "") {
+        pdfFrame.src = OFFICIAL_RESULTS_PDF_URL;
+        externalLink.href = OFFICIAL_RESULTS_PDF_URL;
+        emptyNotice.classList.add("hidden");
+        pdfViewer.classList.remove("hidden");
+        pdfViewer.classList.add("flex");
+      } else {
+        emptyNotice.classList.remove("hidden");
+        pdfViewer.classList.add("hidden");
+        pdfViewer.classList.remove("flex");
+      }
+
+      // قفل وإغلاق الأقسام افتراضياً فور تسجيل الدخول حتى يضغط عليها الطالب لفتحها
+      resetSectionsToLocked();
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // إدارة طي وقفل وفتح قسم التعليمات والقوانين
+    function toggleRulesSection() {
+      const content = document.getElementById("rulesContent");
+      const chevron = document.getElementById("rulesChevron");
+      const lockIcon = document.getElementById("rulesLockIcon");
+      const lockText = document.getElementById("rulesLockText");
+      
+      const isHidden = content.classList.contains("hidden");
+      if (isHidden) {
+        content.classList.remove("hidden");
+        chevron.classList.add("rotate-180");
+        lockIcon.innerText = "🔓";
+        lockText.innerText = "مفتوح - اضغط للإغلاق";
+      } else {
+        content.classList.add("hidden");
+        chevron.classList.remove("rotate-180");
+        lockIcon.innerText = "🔒";
+        lockText.innerText = "مقفل - اضغط للفتح";
+      }
+    }
+
+    // إدارة طي وقفل وفتح قسم كشف درجات ونتائج الاختبارات
+    function toggleResultsSection() {
+      const content = document.getElementById("resultsContentArea");
+      const chevron = document.getElementById("resultsChevron");
+      const lockIcon = document.getElementById("resultsLockIcon");
+      const lockText = document.getElementById("resultsLockText");
+
+      const isHidden = content.classList.contains("hidden");
+      if (isHidden) {
+        content.classList.remove("hidden");
+        chevron.classList.add("rotate-180");
+        lockIcon.innerText = "🔓";
+        lockText.innerText = "مفتوح - اضغط للإغلاق";
+      } else {
+        content.classList.add("hidden");
+        chevron.classList.remove("rotate-180");
+        lockIcon.innerText = "🔒";
+        lockText.innerText = "مقفل - اضغط للفتح";
+      }
+    }
+
+    // إعادة ضبط الأقسام إلى وضع الإغلاق والقفل عند كل تسجيل دخول جديد
+    function resetSectionsToLocked() {
+      // إغلاق قسم التعليمات والقوانين
+      const rulesContent = document.getElementById("rulesContent");
+      const rulesChevron = document.getElementById("rulesChevron");
+      const rulesLockIcon = document.getElementById("rulesLockIcon");
+      const rulesLockText = document.getElementById("rulesLockText");
+      if (rulesContent) {
+        rulesContent.classList.add("hidden");
+        rulesChevron.classList.remove("rotate-180");
+        rulesLockIcon.innerText = "🔒";
+        rulesLockText.innerText = "مقفل - اضغط للفتح";
+      }
+
+      // إغلاق قسم كشف النتائج
+      const resultsArea = document.getElementById("resultsContentArea");
+      const resultsChevron = document.getElementById("resultsChevron");
+      const resultsLockIcon = document.getElementById("resultsLockIcon");
+      const resultsLockText = document.getElementById("resultsLockText");
+      if (resultsArea) {
+        resultsArea.classList.add("hidden");
+        resultsChevron.classList.remove("rotate-180");
+        resultsLockIcon.innerText = "🔒";
+        resultsLockText.innerText = "مقفل - اضغط للفتح";
+      }
+    }
+
+    // تسجيل الخروج والعودة لشاشة الدخول
+    function handleLogout() {
+      currentLoggedInStudent = null;
+      document.getElementById("resultsSection").classList.add("hidden");
+      document.getElementById("loginSection").classList.remove("hidden");
+      
+      // تفريغ المدخلات
+      document.getElementById("studentPassword").value = "";
+      showToast("تم تسجيل الخروج بنجاح", "info");
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // إظهار أو إخفاء كلمة المرور
+    function togglePasswordVisibility() {
+      const passInput = document.getElementById("studentPassword");
+      const eyeIcon = document.getElementById("eyeIcon");
+      if (passInput.type === "password") {
+        passInput.type = "text";
+        eyeIcon.innerHTML = `
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+        `;
+      } else {
+        passInput.type = "password";
+        eyeIcon.innerHTML = `
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+        `;
+      }
+    }
+
+    // إدارة نافذة الواتساب
+    function openWhatsAppModal() {
+      document.getElementById("whatsappModal").classList.remove("hidden");
+    }
+
+    function closeWhatsAppModal() {
+      document.getElementById("whatsappModal").classList.add("hidden");
+    }
+
+    // إغلاق النافذة عند النقر خارجها
+    window.addEventListener("click", function(e) {
+      const modal = document.getElementById("whatsappModal");
+      if (e.target === modal) {
+        closeWhatsAppModal();
+      }
+    });
+
+    // نسخ رقم هاتف أ. تميم الدوسري
+    function copyPhoneNumber() {
+      const phone = "31098549";
+      const dummyInput = document.createElement("input");
+      document.body.appendChild(dummyInput);
+      dummyInput.value = phone;
+      dummyInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(dummyInput);
+      
+      showToast("تم نسخ الرقم: 31098549 بنجاح", "success");
+    }
+
+    // نظام التنبيهات المخصص (بديل آمن لـ alert)
+    let toastTimeout = null;
+    function showToast(message, type = "info") {
+      const toast = document.getElementById("toastNotification");
+      const content = document.getElementById("toastContent");
+      const msg = document.getElementById("toastMessage");
+      const icon = document.getElementById("toastIcon");
+
+      if (toastTimeout) clearTimeout(toastTimeout);
+
+      msg.innerText = message;
+
+      // ضبط الألوان والأيقونة
+      if (type === "error") {
+        content.className = "flex items-center gap-3 p-4 rounded-xl shadow-xl text-white font-medium text-sm bg-rose-600";
+        icon.innerText = "❌";
+      } else if (type === "success") {
+        content.className = "flex items-center gap-3 p-4 rounded-xl shadow-xl text-white font-medium text-sm bg-emerald-600";
+        icon.innerText = "✅";
+      } else {
+        content.className = "flex items-center gap-3 p-4 rounded-xl shadow-xl text-white font-medium text-sm bg-[#8A1538]";
+        icon.innerText = "ℹ️";
+      }
+
+      toast.classList.remove("opacity-0", "-translate-y-12", "pointer-events-none");
+      toast.classList.add("opacity-100", "translate-y-0");
+
+      toastTimeout = setTimeout(() => {
+        hideToast();
+      }, 4500);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById("toastNotification");
+      toast.classList.add("opacity-0", "-translate-y-12", "pointer-events-none");
+      toast.classList.remove("opacity-100", "translate-y-0");
+    }
+  </script>
+</body>
+</html>
