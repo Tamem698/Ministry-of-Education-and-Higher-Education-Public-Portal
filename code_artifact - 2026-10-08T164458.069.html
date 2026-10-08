@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>بوابة خدمات الجمهور - وزارة التربية والتعليم والتعليم العالي</title>
+    <!-- تضمين مكتبة Tailwind CSS للتصميم العصري -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استيراد خطوط عربية رسمية وواضحة (Cairo & Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Cairo", "Tajawal", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      .qatar-maroon {
+        background-color: #8a1538;
+      }
+      .text-qatar-maroon {
+        color: #8a1538;
+      }
+      .border-qatar-maroon {
+        border-color: #8a1538;
+      }
+      .hover-qatar-maroon:hover {
+        background-color: #6e102c;
+      }
+      /* أنماط وتأثيرات التحرك السلس للأكورديون */
+      .section-transition {
+        transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease, transform 0.35s ease;
+      }
+      /* تخصيص شريط التمرير */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8a1538;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col justify-between selection:bg-[#8A1538] selection:text-white">
+
+    <!-- رأس الصفحة الرسمي (الهيدر): يطابق تماماً الهوية الرسمية لوزارة التربية والتعليم والتعليم العالي في الصورة -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+        <div class="flex items-center justify-between flex-wrap gap-4">
+          
+          <!-- الشعار الرسمي المطابق للصورة: النصوص الرسمية وبجانبها الشعار المتجهي القطري الدقيق بدون إطار دائري -->
+          <div class="flex items-center gap-4 sm:gap-6">
+            
+            <!-- الرسم المتجهي الدقيق لشعار دولة قطر والوزارة (عنابي موحد #8A1538) -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 text-[#8A1538] shrink-0 flex items-center justify-center">
+              <svg viewBox="0 0 120 120" class="w-full h-full" fill="currentColor">
+                <!-- أمواج البحر المتعرجة -->
+                <path d="M 32 68 Q 42 64 52 68 T 72 68 T 92 68" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M 30 73 Q 41 69 52 73 T 73 73 T 94 73" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M 35 78 Q 44 75 53 78 T 71 78 T 89 78" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                <!-- سفينة المحمل القطري التراثي (الشراع والمقدمة) -->
+                <path d="M 33 65 C 38 67, 50 67, 58 64 L 56 61 C 48 61, 38 60, 33 65 Z" />
+                <!-- شراع المحمل المثلث المميز في الشعار القطري -->
+                <path d="M 46 62 L 46 36 Q 44 48 34 57 Q 38 62 46 62 Z" />
+                <!-- سارية الشراع -->
+                <line x1="46" y1="34" x2="46" y2="64" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+
+                <!-- النخلة الرئيسية الكبيرة (اليمين) -->
+                <path d="M 72 65 Q 73 48 76 38" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                <!-- سعف النخلة الكبيرة -->
+                <path d="M 76 38 C 72 32, 63 35, 60 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M 76 38 C 80 32, 89 35, 92 38" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M 76 38 C 72 26, 62 26, 59 31" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M 76 38 C 80 26, 90 26, 93 31" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M 76 38 C 75 24, 77 24, 76 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+
+                <!-- النخلة الثانية الأصغر -->
+                <path d="M 86 65 Q 87 52 89 44" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                <path d="M 89 44 C 86 40, 80 41, 78 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M 89 44 C 92 40, 98 41, 100 44" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M 89 44 C 87 34, 82 34, 79 38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M 89 44 C 91 34, 96 34, 99 38" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+
+                <!-- السيفان المتقاطعان في القاعدة (النمط القطري الرسمي) -->
+                <!-- السيف المنحني لليمين -->
+                <path d="M 24 94 Q 58 79 96 98" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                <!-- السيف المنحني لليسار -->
+                <path d="M 96 94 Q 62 79 24 98" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                
+                <!-- مقابض ونهايات السيوف الرسمية -->
+                <path d="M 23 93 L 18 97 L 24 102 L 28 98 Z" />
+                <circle cx="18" cy="99" r="2.8" />
+                <path d="M 97 93 L 102 97 L 96 102 L 92 98 Z" />
+                <circle cx="102" cy="99" r="2.8" />
+              </svg>
+            </div>
+
+            <!-- الكتل النصية الرسمية المطابقة للخط والتوزيع بالصورة تماماً -->
+            <div class="space-y-0.5 select-none">
+              <!-- اسم الوزارة بالعربية بخط عريض ورسمي ولون عنابي -->
+              <h1 class="text-lg sm:text-2xl font-black text-[#8A1538] tracking-tight leading-tight">
+                وزارة التـربـيـة والتعلـيـم والتعلـيـم العـالـي
+              </h1>
+              
+              <!-- اسم الوزارة بالإنجليزية -->
+              <p class="text-xs sm:text-sm font-bold text-slate-800 tracking-wide font-sans">
+                Ministry of Education and Higher Education
+              </p>
+              
+              <!-- دولة قطر بالعربية والإنجليزية مع النقطة العنابية في المنتصف كما في الصورة -->
+              <div class="flex items-center gap-2 text-xs sm:text-[13px] font-bold text-slate-700 pt-0.5">
+                <span>دولة قــطــر</span>
+                <span class="w-1.5 h-1.5 rotate-45 bg-[#8A1538] inline-block"></span>
+                <span class="font-sans font-semibold">State of Qatar</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- شارة البوابة الرسمية -->
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-rose-50 text-[#8A1538] border border-rose-200 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-[#8A1538] animate-ping"></span>
+              بوابة خدمات الجمهور
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- المحتوى الرئيسي للموقع -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+      <!-- واجهة تسجيل الدخول (تظهر عندما لا يكون الطالب مسجلاً دخوله) -->
+      <section id="loginView" class="max-w-md mx-auto my-6">
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+          
+          <!-- الترويسة العنابية لبطاقة الدخول -->
+          <div class="bg-[#8A1538] p-6 text-white text-center">
+            <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+            <h2 class="text-xl font-bold">تسجيل دخول الطالب</h2>
+            <p class="text-xs text-rose-100 mt-1">يرجى إدخال البريد الإلكتروني وكلمة المرور المعتمدة</p>
+          </div>
+
+          <!-- استمارة إدخال البيانات -->
+          <form id="loginForm" onsubmit="handleLogin(event)" class="p-6 space-y-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5" for="loginEmail">
+                البريد الإلكتروني للطلاب أو الرقم الشخصي:
+              </label>
+              <div class="relative">
+                <input
+                  type="text"
+                  id="loginEmail"
+                  required
+                  placeholder="name@students.edu-qatar.example"
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#8A1538] focus:border-transparent transition-all"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5" for="loginPassword">
+                كلمة المرور:
+              </label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="loginPassword"
+                  required
+                  placeholder="••••••••"
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-[#8A1538] focus:border-transparent transition-all"
+                />
+              </div>
+            </div>
+
+            <!-- رسالة الخطأ عند عدم وجود الحساب -->
+            <div id="loginErrorMsg" class="hidden p-3 rounded-xl bg-red-50 border border-red-200 text-red-700 text-xs font-semibold leading-relaxed">
+              ⚠️ خطأ: البيانات المدخلة غير مسجلة في النظام. لا يمكن الدخول إلا بالحسابات المعتمدة رسمياً.
+            </div>
+
+            <!-- زر تسجيل الدخول -->
+            <button
+              type="submit"
+              class="w-full py-3 px-4 rounded-xl bg-[#8A1538] hover:bg-[#6e102c] text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2"
+            >
+              <span>تسجيل الدخول إلى البوابة</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+              </svg>
+            </button>
+          </form>
+
+          <!-- صندوق إنشاء الحساب والتواصل المباشر مع تميم الدوسري -->
+          <div class="p-6 bg-slate-50 border-t border-slate-200 text-center space-y-3">
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700">
+              <span class="text-amber-600">📢</span>
+              <span>إذا تبي إنشاء حساب جديد:</span>
+            </div>
+            
+            <p class="text-xs text-slate-600 leading-relaxed font-medium">
+              تواصل مباشرة مع المشرف <strong class="text-[#8A1538]">تميم الدوسري</strong> عبر الواتساب على الرقم:
+              <span dir="ltr" class="font-bold text-slate-800 bg-white px-2 py-0.5 rounded border border-slate-200">31098549</span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-2 pt-1">
+              <a
+                href="https://wa.me/97431098549"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 inline-flex items-center justify-center gap-2 py-2 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-sm transition-all"
+              >
+                <span>مراسلة واتساب الآن</span>
+                <span class="text-sm">💬</span>
+              </a>
+
+              <button
+                type="button"
+                onclick="copyWhatsAppNumber()"
+                class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-semibold text-xs transition-all"
+              >
+                <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span>نسخ الرقم</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- لوحة تحكم الطالب (تظهر فقط بعد تسجيل الدخول بنجاح) -->
+      <section id="dashboardView" class="hidden space-y-6">
+
+        <!-- بطاقة هوية الطالب المسجل -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-3.5">
+            <div class="w-12 h-12 rounded-2xl bg-[#8A1538] text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+              <span id="studentInitial">ت</span>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 id="studentDisplayName" class="text-lg font-extrabold text-slate-900">تميم الدوسري</h3>
+                <span class="px-2 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800">
+                  حساب نشط ومسجل
+                </span>
+              </div>
+              <p id="studentDisplayGrade" class="text-xs text-slate-600 mt-0.5 font-medium">
+                مدرسة علي بن الخطاب الإعدادية للبنين - الصف السابع
+              </p>
+              <div class="flex items-center gap-3 text-[11px] text-slate-400 mt-1">
+                <span>الرقم الأكاديمي: <strong id="studentDisplayId" class="text-slate-600 font-semibold">2026/0954</strong></span>
+                <span>•</span>
+                <span>الرقم الشخصي: <strong id="studentDisplayQid" class="text-slate-600 font-semibold">31363400892</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- زر تسجيل الخروج -->
+          <button
+            type="button"
+            onclick="handleLogout()"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-red-700 bg-red-50 hover:bg-red-100 border border-red-200 transition-all self-end md:self-auto"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            <span>تسجيل الخروج</span>
+          </button>
+        </div>
+
+        <!-- تذكير بالملاحظة المهمة: جميع الأقسام مقفلة افتراضياً وتفتح فقط عند النقر عليها -->
+        <div class="text-xs text-slate-500 font-medium flex items-center gap-1.5 bg-slate-100/70 p-2.5 rounded-xl border border-slate-200">
+          <span>🔒</span>
+          <span>تنبيه: جميع الأقسام مغلقة ومقفلة افتراضياً. اضغط على أي قسم لفتحه واستعراض محتواه.</span>
+        </div>
+
+        <!-- قسم التعليمات والقوانين المدرسية (مقفل افتراضياً) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+          <button
+            type="button"
+            onclick="toggleRulesSection()"
+            class="w-full p-4 sm:p-5 flex items-center justify-between text-right bg-white hover:bg-slate-50 transition-colors"
+          >
+            <div class="flex items-center gap-3">
+              <span id="rulesLockIcon" class="w-9 h-9 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base">
+                🔒
+              </span>
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-800">
+                  لائحة التعليمات والقوانين الرسمية
+                </h4>
+                <p class="text-xs text-slate-500 mt-0.5">ضوابط الحسابات المدرسية والانضباط الأكاديمي</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span id="rulesBadge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                مقفل - اضغط للفتح
+              </span>
+              <svg id="rulesArrow" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <!-- محتوى التعليمات (مخفي افتراضياً) -->
+          <div id="rulesContent" class="hidden border-t border-slate-100 p-5 bg-slate-50/50 space-y-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs leading-relaxed text-slate-700">
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-2.5">
+                <span class="text-base text-[#8A1538]">📌</span>
+                <div>
+                  <strong class="font-bold text-slate-900 block mb-0.5">سرية بيانات الحساب:</strong>
+                  يُحظر مشاركة البريد الإلكتروني وكلمة المرور مع أي شخص آخر، ويتحمل الطالب المسؤولية الكاملة عن أي استخدام لحسابه.
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-2.5">
+                <span class="text-base text-[#8A1538]">⚖️</span>
+                <div>
+                  <strong class="font-bold text-slate-900 block mb-0.5">اعتماد الدرجات وكشوفات النتائج:</strong>
+                  تعتبر النتائج الصادرة عبر النظام معتمدة رسمياً بعد مصادقة إدارة المدرسة ووزارة التربية والتعليم والتعليم العالي.
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-2.5">
+                <span class="text-base text-[#8A1538]">⏱️</span>
+                <div>
+                  <strong class="font-bold text-slate-900 block mb-0.5">فترة المراجعة والتظلمات:</strong>
+                  تُتاح فترة أسبوع رسمي بعد رصد ونشر النتائج لمراجعة أوراق الاختبارات بالتنسيق المباشر مع معلم المادة.
+                </div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm flex items-start gap-2.5">
+                <span class="text-base text-[#8A1538]">📱</span>
+                <div>
+                  <strong class="font-bold text-slate-900 block mb-0.5">الدعم الفني والخدمات:</strong>
+                  لإنشاء حسابات جديدة أو تحديث بيانات الدخول يرجى التواصل مع المشرف تميم الدوسري (واتساب 31098549).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- القسم الأول: كشف نتائج الاختبارات (فارغ رسمياً - مقفل افتراضياً) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+          <button
+            type="button"
+            onclick="toggleResultsSection()"
+            class="w-full p-4 sm:p-5 flex items-center justify-between text-right bg-white hover:bg-slate-50 transition-colors"
+          >
+            <div class="flex items-center gap-3">
+              <span id="resultsLockIcon" class="w-9 h-9 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base">
+                🔒
+              </span>
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-800">
+                  القسم الأول: كشف نتائج الاختبارات الرسمية
+                </h4>
+                <p class="text-xs text-slate-500 mt-0.5">كشف الدرجات والتقييم الدوري للمواد الدراسية</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span id="resultsBadge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                مقفل - اضغط للفتح
+              </span>
+              <svg id="resultsArrow" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <!-- محتوى نتائج الاختبارات: فارغ بناء على الطلب (ولا يسمح للطلاب برفع شيء) -->
+          <div id="resultsContent" class="hidden border-t border-slate-100 p-6 bg-slate-50/50">
+            <div class="max-w-xl mx-auto text-center py-8 px-4 bg-white rounded-2xl border-2 border-dashed border-slate-200 shadow-sm">
+              <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-2xl">
+                📋
+              </div>
+              <h5 class="text-base font-bold text-slate-800">كشف نتائج الاختبارات فارغ حالياً</h5>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed max-w-md mx-auto">
+                لم يتم إدراج أو اعتماد كشف النتائج لهذا الفصل حتى الآن. سيتم نشر كشف الدرجات الرسمي مباشرة فور اعتماده من إدارة المدرسة.
+              </p>
+              
+              <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">
+                <span>🔒 غير متاح للطلاب رفع أو تعديل أي ملفات</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- القسم الثاني: الأوراق المدرسية (ملازم الصف الخامس بصيغة PDF - مقفل افتراضياً) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+          <button
+            type="button"
+            onclick="toggleSchoolPapersSection()"
+            class="w-full p-4 sm:p-5 flex items-center justify-between text-right bg-white hover:bg-slate-50 transition-colors"
+          >
+            <div class="flex items-center gap-3">
+              <span id="papersLockIcon" class="w-9 h-9 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base">
+                🔒
+              </span>
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-800">
+                  القسم الثاني: الأوراق والملازم المدرسية (PDF)
+                </h4>
+                <p id="papersSubtitle" class="text-xs text-slate-500 mt-0.5">ملازم الدراسات الاجتماعية واللغة العربية الرسمية</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span id="papersBadge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                مقفل - اضغط للفتح
+              </span>
+              <svg id="papersArrow" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <!-- محتوى الأوراق المدرسية المعتمدة -->
+          <div id="papersContent" class="hidden border-t border-slate-100 p-5 bg-slate-50/50 space-y-4">
+            
+            <!-- عرض أوراق مدرسة عمر بن الخطاب الابتدائية للبنين (الملازم متوفرة) -->
+            <div id="papersOmarSection" class="space-y-4">
+              <!-- أزرار التبديل بين الملزمتين -->
+              <div class="flex flex-wrap items-center gap-2 border-b border-slate-200 pb-3">
+                <button
+                  type="button"
+                  id="btnPaperSocial"
+                  onclick="selectPaper('social')"
+                  class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#8A1538] text-white shadow-sm flex items-center gap-2"
+                >
+                  <span>🌍</span>
+                  <span>ملزمة الدراسات الاجتماعية (77 صفحة)</span>
+                </button>
+                <button
+                  type="button"
+                  id="btnPaperArabic"
+                  onclick="selectPaper('arabic')"
+                  class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 flex items-center gap-2"
+                >
+                  <span>📖</span>
+                  <span>ملزمة اللغة العربية النحو (90 صفحة)</span>
+                </button>
+              </div>
+
+              <!-- بطاقة معلومات الملف النشط وخيارات التصفح -->
+              <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                <div>
+                  <div class="flex items-center gap-2">
+                    <h5 id="activePaperTitle" class="font-bold text-sm text-slate-900">ملزمة الدراسات الاجتماعية - مراجعة منظمة</h5>
+                    <span id="activePaperBadge" class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-50 text-[#8A1538] border border-rose-200">
+                      الوحدات 1 إلى 10
+                    </span>
+                  </div>
+                  <p id="activePaperDesc" class="text-xs text-slate-500 mt-0.5">
+                    تتضمن المفاهيم وبنك أسئلة شامل وإجابات نموذجية (77 صفحة معتمدة).
+                  </p>
+                </div>
+
+                <!-- أزرار تفاعلية لعرض وتحميل الملزمة -->
+                <div class="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onclick="openPdfModal()"
+                    class="px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-sm flex items-center gap-1.5 transition-all"
+                  >
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    </svg>
+                    <span>عرض ملء الشاشة</span>
+                  </button>
+
+                  <a
+                    id="activePaperDownloadLink"
+                    href="ملزمة_الدراسات_الاجتماعية_اسئلة_كثيرة_مع_الشعار.pdf"
+                    download
+                    class="px-3 py-1.5 rounded-lg bg-[#8A1538] hover:bg-[#6e102c] text-white font-bold text-xs shadow-sm flex items-center gap-1.5 transition-all"
+                  >
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    <span>تحميل الملزمة (PDF)</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- إطار معاينة ملف الـ PDF المضمن -->
+              <div class="relative w-full h-[550px] bg-slate-100 rounded-xl overflow-hidden border border-slate-200 shadow-inner">
+                <iframe
+                  id="pdfFrame"
+                  src="ملزمة_الدراسات_الاجتماعية_اسئلة_كثيرة_مع_الشعار.pdf#toolbar=1"
+                  class="w-full h-full border-0"
+                  title="معاينة الملزمة المدرسية"
+                ></iframe>
+              </div>
+
+              <!-- فهرس الدروس والوحدات التفاعلي -->
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <div class="flex items-center justify-between cursor-pointer" onclick="toggleUnitsList()">
+                  <div class="flex items-center gap-2">
+                    <span class="text-sm font-bold text-slate-800">📑 فهرس المحتويات والدروس المشمولة</span>
+                    <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-semibold">10 مواضيع</span>
+                  </div>
+                  <span id="unitsToggleIcon" class="text-xs text-slate-400 font-bold">عرض الفهرس ▾</span>
+                </div>
+                <div id="unitsListContainer" class="hidden mt-3 pt-3 border-t border-slate-100">
+                  <div id="unitsListGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 text-xs">
+                    <!-- يُملأ ديناميكياً عبر الجافاسكريبت -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- عرض مدرسة علي بن الخطاب الإعدادية للبنين (فارغة بناءً على التوجيه) -->
+            <div id="papersAliEmptySection" class="hidden max-w-xl mx-auto text-center py-8 px-4 bg-white rounded-2xl border-2 border-dashed border-slate-200 shadow-sm">
+              <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-2xl">
+                📂
+              </div>
+              <h5 class="text-base font-bold text-slate-800">الأوراق والملازم المدرسية فارغة حالياً</h5>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed max-w-md mx-auto">
+                لم يتم إدراج أو اعتماد أي أوراق دراسية أو ملازم خاصة بـ <strong class="text-slate-700">مدرسة علي بن الخطاب الإعدادية للبنين</strong> حتى الآن.
+              </p>
+              <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">
+                <span>🔒 غير متاح للطلاب رفع أي ملفات</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- القسم الثالث: فيديوهات مراجعة منتصف الفصل الدراسي الأول (مقفل افتراضياً) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+          <button
+            type="button"
+            onclick="toggleVideosSection()"
+            class="w-full p-4 sm:p-5 flex items-center justify-between text-right bg-white hover:bg-slate-50 transition-colors"
+          >
+            <div class="flex items-center gap-3">
+              <span id="videosLockIcon" class="w-9 h-9 rounded-xl bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base">
+                🔒
+              </span>
+              <div>
+                <h4 class="text-sm sm:text-base font-bold text-slate-800">
+                  القسم الثالث: فيديوهات مراجعة منتصف الفصل الدراسي الأول
+                </h4>
+                <p id="videosSubtitle" class="text-xs text-slate-500 mt-0.5">الحصص المصورة والمراجعات المعتمدة للاختبارات</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span id="videosBadge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+                مقفل - اضغط للفتح
+              </span>
+              <svg id="videosArrow" class="w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <!-- محتوى الفيديو المعتمد -->
+          <div id="videosContent" class="hidden border-t border-slate-100 p-6 bg-slate-50/50 space-y-4">
+            
+            <!-- عرض فيديوهات مدرسة عمر بن الخطاب الابتدائية للبنين (الفيديو موجود) -->
+            <div id="videosOmarSection" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-5 flex flex-col md:flex-row gap-5 items-center">
+              <!-- صورة ومظهر المشغل المصغر -->
+              <div class="w-full md:w-72 h-44 rounded-xl bg-slate-900 text-white relative flex flex-col items-center justify-center p-4 text-center overflow-hidden shrink-0 shadow-md group">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-[#8A1538]/40 to-transparent"></div>
+                <div class="relative z-10 space-y-2">
+                  <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 flex items-center justify-center mx-auto text-white shadow-lg group-hover:scale-110 transition-transform">
+                    <svg class="w-6 h-6 fill-current translate-x-0.5" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <span class="text-xs font-bold block text-white/95">حصة مرئية عالية الدقة</span>
+                  <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500 text-white font-bold">OneDrive Video</span>
+                </div>
+              </div>
+
+              <!-- التفاصيل والبيانات الرسمية للحصة -->
+              <div class="flex-grow space-y-2.5 text-right w-full">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-50 text-[#8A1538] border border-rose-200">
+                    📖 مادة اللغة العربية
+                  </span>
+                  <span class="text-xs text-slate-400 font-medium">مدرسة عمر بن الخطاب الابتدائية للبنين</span>
+                </div>
+
+                <h5 class="text-base font-extrabold text-slate-900 leading-snug">
+                  مراجعة مادة اللغة العربية - منتصف الفصل الدراسي الأول
+                </h5>
+
+                <div class="flex items-center gap-2 text-xs text-slate-600 font-semibold">
+                  <span>المعلم المشرف:</span>
+                  <strong class="text-[#8A1538] font-bold">الأستاذ تميم الدوسري</strong>
+                </div>
+
+                <p class="text-xs text-slate-500 leading-relaxed">
+                  حصة مراجعة شاملة تركز على القواعد والتراكيب النحوية والمهارات الإملائية المقررة في اختبارات منتصف الفصل الدراسي الأول.
+                </p>
+
+                <!-- أزرار تشغيل ومشاركة الفيديو -->
+                <div class="flex flex-wrap items-center gap-2 pt-2">
+                  <a
+                    href="https://1drv.ms/v/c/2ef7029b9109c28d/IQDwcZanv8j0QZc-S5OeQPEYASP01xyZpmKabNA73cafI4k?e=H3DZAN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#8A1538] hover:bg-[#6e102c] text-white font-bold text-xs shadow-sm transition-all"
+                  >
+                    <span>مشاهدة الفيديو على OneDrive</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+
+                  <button
+                    type="button"
+                    onclick="openVideoModal()"
+                    class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs shadow-sm transition-all"
+                  >
+                    <span>فتح المشغل المدمج</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </button>
+
+                  <button
+                    type="button"
+                    onclick="copyVideoLink()"
+                    class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-semibold text-xs transition-all"
+                  >
+                    <svg class="w-3.5 h-3.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                    <span>نسخ رابط الفيديو</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- عرض مدرسة علي بن الخطاب الإعدادية للبنين (الفيديوهات فارغة) -->
+            <div id="videosAliEmptySection" class="hidden max-w-xl mx-auto text-center py-8 px-4 bg-white rounded-2xl border-2 border-dashed border-slate-200 shadow-sm">
+              <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-slate-100 text-slate-500 flex items-center justify-center text-2xl">
+                🎥
+              </div>
+              <h5 class="text-base font-bold text-slate-800">فيديوهات المراجعة فارغة حالياً</h5>
+              <p class="text-xs text-slate-500 mt-1.5 leading-relaxed max-w-md mx-auto">
+                لم يتم إدراج أو اعتماد أي فيديوهات مراجعة لـ <strong class="text-slate-700">مدرسة علي بن الخطاب الإعدادية للبنين</strong> حتى الآن.
+              </p>
+              <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100 text-slate-600 text-xs font-semibold">
+                <span>🔒 غير متاح للطلاب رفع أي تسجيلات</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- نافذة منبثقة لمشغل الفيديو المدمج -->
+    <div id="videoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white w-full max-w-4xl rounded-2xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+        <div class="bg-[#8A1538] text-white p-4 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🎥</span>
+            <span class="font-bold text-sm">مراجعة مادة اللغة العربية - الأستاذ تميم الدوسري</span>
+          </div>
+          <button type="button" onclick="closeVideoModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-lg">
+            ✕
+          </button>
+        </div>
+        <div class="p-4 flex-grow flex flex-col items-center justify-center bg-slate-950 text-white min-h-[360px] text-center space-y-4">
+          <div class="w-16 h-16 rounded-full bg-[#8A1538] flex items-center justify-center text-2xl shadow-lg">
+            ▶️
+          </div>
+          <div class="space-y-1 max-w-md">
+            <h6 class="font-bold text-base">مقطع مراجعة منتصف الفصل الأول</h6>
+            <p class="text-xs text-slate-400">
+              نظراً لسياسات حماية الوسائط من OneDrive، يُفضل فتح الفيديو مباشرة للاستمتاع بالمشاهدة بالشاشة الكاملة وبالجودة الأصلية.
+            </p>
+          </div>
+          <a
+            href="https://1drv.ms/v/c/2ef7029b9109c28d/IQDwcZanv8j0QZc-S5OeQPEYASP01xyZpmKabNA73cafI4k?e=H3DZAN"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md transition-all inline-flex items-center gap-2"
+          >
+            <span>فتح وتشغيل في مشغل OneDrive الرسمي</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- نافذة منبثقة لعرض ملف الـ PDF بملء الشاشة -->
+    <div id="pdfModal" class="hidden fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-2 sm:p-4">
+      <div class="bg-white w-full max-w-6xl h-[94vh] rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+        <div class="bg-[#8A1538] text-white p-3.5 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <span class="text-base">📄</span>
+            <span id="pdfModalTitle" class="font-bold text-xs sm:text-sm">معاينة الملزمة المدرسية</span>
+          </div>
+          <button type="button" onclick="closePdfModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white text-base">
+            ✕
+          </button>
+        </div>
+        <div class="flex-grow bg-slate-100">
+          <iframe id="pdfModalFrame" src="" class="w-full h-full border-0" title="معاينة الملف"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- نظام التنبيهات المنبثقة البديل الآمن عن alert() -->
+    <div id="customAlertModal" class="hidden fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+      <div class="bg-white max-w-sm w-full rounded-2xl p-5 shadow-2xl border border-slate-200 text-center space-y-3">
+        <div id="alertIconBox" class="w-12 h-12 rounded-full mx-auto flex items-center justify-center text-xl bg-rose-100 text-[#8A1538]">
+          ℹ️
+        </div>
+        <h4 id="alertTitle" class="font-bold text-base text-slate-800">تنبيه</h4>
+        <p id="alertMessage" class="text-xs text-slate-600 leading-relaxed">رسالة التنبيه هنا</p>
+        <button
+          type="button"
+          onclick="closeAlertModal()"
+          class="w-full py-2.5 px-4 rounded-xl bg-[#8A1538] hover:bg-[#6e102c] text-white font-bold text-xs transition-all"
+        >
+          موافق
+        </button>
+      </div>
+    </div>
+
+    <!-- إشعار توست سريع (Toast Notification) -->
+    <div id="toastNotification" class="fixed bottom-5 left-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+      <div class="bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-xl text-xs font-semibold flex items-center gap-2 border border-slate-700">
+        <span id="toastIcon">✅</span>
+        <span id="toastText">تم الإجراء بنجاح</span>
+      </div>
+    </div>
+
+    <!-- تذييل الصفحة الرسمي -->
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500 font-medium">
+      <div class="max-w-7xl mx-auto px-4">
+        <span>جميع الحقوق محفوظة © 2026 - وزارة التربية والتعليم والتعليم العالي - دولة قطر</span>
+      </div>
+    </footer>
+
+    <!-- أكواد الجافاسكريبت والمنطق التفاعلي المتكامل -->
+    <script>
+      /**
+       * قائمة الطلاب المعتمدين وتحديد انتماء كل طالب للمدرسة (omar أو ali)
+       */
+      const REGISTERED_STUDENTS = [
+        {
+          name: "تميم الدوسري",
+          email: "t.aldosari@students.edu-qatar.example",
+          password: "Tamim@2026Q",
+          schoolType: "ali",
+          classGrade: "مدرسة علي بن الخطاب الإعدادية للبنين - الصف السابع",
+          academicId: "2026/0954",
+          qid: "31363400892"
+        },
+        {
+          name: "سلمان الدوسري",
+          email: "s.aldosari@students.edu-qatar.example",
+          password: "Salman@2026Q",
+          schoolType: "omar",
+          classGrade: "مدرسة عمر بن الخطاب الابتدائية للبنين - الصف الخامس",
+          academicId: "2026/0142",
+          qid: "31563400112"
+        },
+        {
+          name: "محمد الدوسري",
+          email: "m.aldosari@students.edu-qatar.example",
+          password: "Mohammed@26Q",
+          schoolType: "omar",
+          classGrade: "مدرسة عمر بن الخطاب الابتدائية للبنين - الصف السادس",
+          academicId: "2026/0285",
+          qid: "31463400234"
+        },
+        {
+          name: "عبدالله علي",
+          email: "a.ali@students.edu-qatar.example",
+          password: "Abdullah#526",
+          schoolType: "omar",
+          classGrade: "مدرسة عمر بن الخطاب الابتدائية للبنين - الصف الخامس",
+          academicId: "2026/0319",
+          qid: "31563400781"
+        },
+        {
+          name: "أحمد علي أحمد",
+          email: "ahmed.ali@students.edu-qatar.example",
+          password: "Ahmed@5A26",
+          schoolType: "omar",
+          classGrade: "مدرسة عمر بن الخطاب الابتدائية للبنين - الصف الخامس",
+          academicId: "2026/0401",
+          qid: "31563400922"
+        }
+      ];
+
+      /**
+       * بيانات الملازم الدراسية (ملفات الـ PDF)
+       */
+      const SCHOOL_PAPERS_DATA = {
+        social: {
+          key: "social",
+          title: "ملزمة الدراسات الاجتماعية - مراجعة منظمة",
+          badge: "الوحدات 1 إلى 10 (77 صفحة)",
+          desc: "مراجعة شاملة معتمدة للوحدات العشر، تتضمن المصطلحات، بنك الأسئلة الاختيارية والمقالية، والإجابات النموذجية.",
+          fileUrl: "ملزمة_الدراسات_الاجتماعية_اسئلة_كثيرة_مع_الشعار.pdf",
+          units: [
+            "1. الخرائط الرقمية",
+            "2. نظم المعلومات الجغرافية",
+            "3. المناخ العالمي",
+            "4. الموارد المائية",
+            "5. الأمن الغذائي",
+            "6. التنمية المستدامة",
+            "7. الحضارات القديمة",
+            "8. الحضارة الإسلامية",
+            "9. طرق التجارة",
+            "10. الهجرة السكانية"
+          ]
+        },
+        arabic: {
+          key: "arabic",
+          title: "ملزمة اللغة العربية - النحو والتراكيب",
+          badge: "10 دروس | 230 سؤالاً (90 صفحة)",
+          desc: "تدريب شامل على القواعد النحوية المقررة مع أسئلة متنوعة: اختيار من متعدد، استخراج، إكمال، وتصحيح.",
+          fileUrl: "ملزمة_اللغة_العربية_230_سؤال_90_صفحة.pdf",
+          units: [
+            "1. الجملة الاسمية",
+            "2. الجملة الفعلية",
+            "3. الفاعل",
+            "4. نائب الفاعل",
+            "5. المفعول به",
+            "6. الحال",
+            "7. التمييز",
+            "8. النعت",
+            "9. العطف",
+            "10. التوكيد"
+          ]
+        }
+      };
+
+      // حالة النظام والمتغيرات الحالية
+      let currentLoggedInStudent = null;
+      let currentPaperKey = "social";
+      let isRulesOpen = false;
+      let isResultsOpen = false;
+      let isPapersOpen = false;
+      let isVideosOpen = false;
+      let isUnitsListOpen = false;
+
+      // رابط فيديو المراجعة المعتمد
+      const APPROVED_VIDEO_URL = "https://1drv.ms/v/c/2ef7029b9109c28d/IQDwcZanv8j0QZc-S5OeQPEYASP01xyZpmKabNA73cafI4k?e=H3DZAN";
+
+      /**
+       * معالجة تسجيل الدخول
+       */
+      function handleLogin(event) {
+        event.preventDefault();
+        const emailInput = document.getElementById("loginEmail").value.trim().toLowerCase();
+        const passwordInput = document.getElementById("loginPassword").value.trim();
+        const errorMsg = document.getElementById("loginErrorMsg");
+
+        // التحقق من قائمة الطلاب المسجلين
+        const found = REGISTERED_STUDENTS.find(function (student) {
+          const matchEmail = student.email.toLowerCase() === emailInput || student.qid === emailInput;
+          const matchPassword = student.password === passwordInput;
+          return matchEmail && matchPassword;
+        });
+
+        if (found) {
+          errorMsg.classList.add("hidden");
+          currentLoggedInStudent = found;
+
+          // تحديث بيانات بطاقة الطالب
+          document.getElementById("studentDisplayName").textContent = found.name;
+          document.getElementById("studentInitial").textContent = found.name.charAt(0);
+          document.getElementById("studentDisplayGrade").textContent = found.classGrade;
+          document.getElementById("studentDisplayId").textContent = found.academicId;
+          document.getElementById("studentDisplayQid").textContent = found.qid;
+
+          // إخفاء استمارة الدخول وإظهار لوحة التحكم
+          document.getElementById("loginView").classList.add("hidden");
+          document.getElementById("dashboardView").classList.remove("hidden");
+
+          // إعادة قفل جميع الأقسام افتراضياً عند كل دخول جديد
+          resetAllSectionsToLocked();
+
+          // تفعيل المحتوى بحسب مدرسة الطالب (عمر بن الخطاب: متوفرة، علي بن الخطاب: فارغة)
+          applySchoolPermissions(found.schoolType);
+
+          showToast("مرحباً بك يا " + found.name + "، تم تسجيل الدخول بنجاح.");
+        } else {
+          errorMsg.classList.remove("hidden");
+          showToast("بيانات الدخول غير صحيحة أو غير مسجلة.", "error");
+        }
+      }
+
+      /**
+       * ضبط صلاحيات عرض الأوراق والفيديوهات بحسب المدرسة
+       */
+      function applySchoolPermissions(schoolType) {
+        const papersOmar = document.getElementById("papersOmarSection");
+        const papersAliEmpty = document.getElementById("papersAliEmptySection");
+        const videosOmar = document.getElementById("videosOmarSection");
+        const videosAliEmpty = document.getElementById("videosAliEmptySection");
+        const papersSubtitle = document.getElementById("papersSubtitle");
+        const videosSubtitle = document.getElementById("videosSubtitle");
+
+        if (schoolType === "omar") {
+          // مدرسة عمر بن الخطاب: الملفات والفيديو موجودان
+          papersOmar.classList.remove("hidden");
+          papersAliEmpty.classList.add("hidden");
+          videosOmar.classList.remove("hidden");
+          videosAliEmpty.classList.add("hidden");
+
+          papersSubtitle.textContent = "ملازم الدراسات الاجتماعية واللغة العربية الرسمية (متاحة)";
+          videosSubtitle.textContent = "حصة مراجعة اللغة العربية للأستاذ تميم الدوسري";
+          selectPaper("social");
+        } else {
+          // مدرسة علي بن الخطاب: الملفات والفيديو فارغة تماماً
+          papersOmar.classList.add("hidden");
+          papersAliEmpty.classList.remove("hidden");
+          videosOmar.classList.add("hidden");
+          videosAliEmpty.classList.remove("hidden");
+
+          papersSubtitle.textContent = "الأوراق والملازم المدرسية فارغة حالياً";
+          videosSubtitle.textContent = "فيديوهات المراجعة فارغة حالياً";
+        }
+      }
+
+      /**
+       * تسجيل الخروج
+       */
+      function handleLogout() {
+        currentLoggedInStudent = null;
+        document.getElementById("loginPassword").value = "";
+        document.getElementById("loginView").classList.remove("hidden");
+        document.getElementById("dashboardView").classList.add("hidden");
+        resetAllSectionsToLocked();
+        showToast("تم تسجيل الخروج بنجاح.");
+      }
+
+      /**
+       * إعادة قفل جميع الأقسام
+       */
+      function resetAllSectionsToLocked() {
+        // قسم القوانين
+        isRulesOpen = false;
+        document.getElementById("rulesContent").classList.add("hidden");
+        document.getElementById("rulesLockIcon").textContent = "🔒";
+        document.getElementById("rulesBadge").textContent = "مقفل - اضغط للفتح";
+        document.getElementById("rulesArrow").classList.remove("rotate-180");
+
+        // قسم النتائج
+        isResultsOpen = false;
+        document.getElementById("resultsContent").classList.add("hidden");
+        document.getElementById("resultsLockIcon").textContent = "🔒";
+        document.getElementById("resultsBadge").textContent = "مقفل - اضغط للفتح";
+        document.getElementById("resultsArrow").classList.remove("rotate-180");
+
+        // قسم الأوراق المدرسية
+        isPapersOpen = false;
+        document.getElementById("papersContent").classList.add("hidden");
+        document.getElementById("papersLockIcon").textContent = "🔒";
+        document.getElementById("papersBadge").textContent = "مقفل - اضغط للفتح";
+        document.getElementById("papersArrow").classList.remove("rotate-180");
+
+        // قسم الفيديوهات
+        isVideosOpen = false;
+        document.getElementById("videosContent").classList.add("hidden");
+        document.getElementById("videosLockIcon").textContent = "🔒";
+        document.getElementById("videosBadge").textContent = "مقفل - اضغط للفتح";
+        document.getElementById("videosArrow").classList.remove("rotate-180");
+      }
+
+      /**
+       * فتح / إغلاق قسم التعليمات والقوانين
+       */
+      function toggleRulesSection() {
+        isRulesOpen = !isRulesOpen;
+        const content = document.getElementById("rulesContent");
+        const icon = document.getElementById("rulesLockIcon");
+        const badge = document.getElementById("rulesBadge");
+        const arrow = document.getElementById("rulesArrow");
+
+        if (isRulesOpen) {
+          content.classList.remove("hidden");
+          icon.textContent = "🔓";
+          badge.textContent = "مفتوح - اضغط للإغلاق";
+          arrow.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.textContent = "🔒";
+          badge.textContent = "مقفل - اضغط للفتح";
+          arrow.classList.remove("rotate-180");
+        }
+      }
+
+      /**
+       * فتح / إغلاق قسم نتائج الاختبارات
+       */
+      function toggleResultsSection() {
+        isResultsOpen = !isResultsOpen;
+        const content = document.getElementById("resultsContent");
+        const icon = document.getElementById("resultsLockIcon");
+        const badge = document.getElementById("resultsBadge");
+        const arrow = document.getElementById("resultsArrow");
+
+        if (isResultsOpen) {
+          content.classList.remove("hidden");
+          icon.textContent = "🔓";
+          badge.textContent = "مفتوح - اضغط للإغلاق";
+          arrow.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.textContent = "🔒";
+          badge.textContent = "مقفل - اضغط للفتح";
+          arrow.classList.remove("rotate-180");
+        }
+      }
+
+      /**
+       * فتح / إغلاق قسم الأوراق المدرسية
+       */
+      function toggleSchoolPapersSection() {
+        isPapersOpen = !isPapersOpen;
+        const content = document.getElementById("papersContent");
+        const icon = document.getElementById("papersLockIcon");
+        const badge = document.getElementById("papersBadge");
+        const arrow = document.getElementById("papersArrow");
+
+        if (isPapersOpen) {
+          content.classList.remove("hidden");
+          icon.textContent = "🔓";
+          badge.textContent = "مفتوح - اضغط للإغلاق";
+          arrow.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.textContent = "🔒";
+          badge.textContent = "مقفل - اضغط للفتح";
+          arrow.classList.remove("rotate-180");
+        }
+      }
+
+      /**
+       * فتح / إغلاق قسم الفيديوهات
+       */
+      function toggleVideosSection() {
+        isVideosOpen = !isVideosOpen;
+        const content = document.getElementById("videosContent");
+        const icon = document.getElementById("videosLockIcon");
+        const badge = document.getElementById("videosBadge");
+        const arrow = document.getElementById("videosArrow");
+
+        if (isVideosOpen) {
+          content.classList.remove("hidden");
+          icon.textContent = "🔓";
+          badge.textContent = "مفتوح - اضغط للإغلاق";
+          arrow.classList.add("rotate-180");
+        } else {
+          content.classList.add("hidden");
+          icon.textContent = "🔒";
+          badge.textContent = "مقفل - اضغط للفتح";
+          arrow.classList.remove("rotate-180");
+        }
+      }
+
+      /**
+       * التبديل بين ملازم الـ PDF
+       */
+      function selectPaper(paperKey) {
+        currentPaperKey = paperKey;
+        const data = SCHOOL_PAPERS_DATA[paperKey];
+        if (!data) return;
+
+        // تحديث النصوص والروابط
+        document.getElementById("activePaperTitle").textContent = data.title;
+        document.getElementById("activePaperBadge").textContent = data.badge;
+        document.getElementById("activePaperDesc").textContent = data.desc;
+        document.getElementById("activePaperDownloadLink").href = data.fileUrl;
+        document.getElementById("pdfFrame").src = data.fileUrl + "#toolbar=1";
+
+        // تنسيق الأزرار النشطة
+        const btnSocial = document.getElementById("btnPaperSocial");
+        const btnArabic = document.getElementById("btnPaperArabic");
+
+        if (paperKey === "social") {
+          btnSocial.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#8A1538] text-white shadow-sm flex items-center gap-2";
+          btnArabic.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 flex items-center gap-2";
+        } else {
+          btnArabic.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-[#8A1538] text-white shadow-sm flex items-center gap-2";
+          btnSocial.className = "px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 flex items-center gap-2";
+        }
+
+        // تحديث شبكة الفهرس
+        renderUnitsList(data.units);
+      }
+
+      /**
+       * ملء قائمة الفهرس
+       */
+      function renderUnitsList(units) {
+        const container = document.getElementById("unitsListGrid");
+        container.innerHTML = "";
+        units.forEach(function (unit) {
+          const item = document.createElement("div");
+          item.className = "p-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-700 flex items-center gap-1.5";
+          item.innerHTML = "<span class='text-[#8A1538]'>•</span><span>" + unit + "</span>";
+          container.appendChild(item);
+        });
+      }
+
+      /**
+       * طي / إظهار الفهرس
+       */
+      function toggleUnitsList() {
+        isUnitsListOpen = !isUnitsListOpen;
+        const container = document.getElementById("unitsListContainer");
+        const icon = document.getElementById("unitsToggleIcon");
+        if (isUnitsListOpen) {
+          container.classList.remove("hidden");
+          icon.textContent = "إخفاء الفهرس ▴";
+        } else {
+          container.classList.add("hidden");
+          icon.textContent = "عرض الفهرس ▾";
+        }
+      }
+
+      /**
+       * فتح نافذة الـ PDF بملء الشاشة
+       */
+      function openPdfModal() {
+        const data = SCHOOL_PAPERS_DATA[currentPaperKey];
+        if (!data) return;
+        document.getElementById("pdfModalTitle").textContent = data.title;
+        document.getElementById("pdfModalFrame").src = data.fileUrl;
+        document.getElementById("pdfModal").classList.remove("hidden");
+      }
+
+      function closePdfModal() {
+        document.getElementById("pdfModalFrame").src = "";
+        document.getElementById("pdfModal").classList.add("hidden");
+      }
+
+      /**
+       * نوافذ مشغل الفيديو
+       */
+      function openVideoModal() {
+        document.getElementById("videoModal").classList.remove("hidden");
+      }
+
+      function closeVideoModal() {
+        document.getElementById("videoModal").classList.add("hidden");
+      }
+
+      /**
+       * نسخ رابط الفيديو
+       */
+      function copyVideoLink() {
+        copyToClipboard(APPROVED_VIDEO_URL);
+        showToast("تم نسخ رابط الفيديو إلى الحافظة بنجاح.");
+      }
+
+      /**
+       * نسخ رقم الواتساب لإنشاء الحساب
+       */
+      function copyWhatsAppNumber() {
+        copyToClipboard("31098549");
+        showToast("تم نسخ رقم الواتساب (31098549) بنجاح.");
+      }
+
+      /**
+       * أداة النسخ إلى الحافظة المتوافقة مع جميع المتصفحات
+       */
+      function copyToClipboard(text) {
+        const temp = document.createElement("textarea");
+        temp.value = text;
+        temp.setAttribute("readonly", "");
+        temp.style.position = "absolute";
+        temp.style.left = "-9999px";
+        document.body.appendChild(temp);
+        temp.select();
+        try {
+          document.execCommand("copy");
+        } catch (e) {
+          console.error("فشل النسخ", e);
+        }
+        document.body.removeChild(temp);
+      }
+
+      /**
+       * نافذة التنبيهات المخصصة البديلة لـ alert()
+       */
+      function showAlertModal(title, message, icon) {
+        document.getElementById("alertTitle").textContent = title || "تنبيه";
+        document.getElementById("alertMessage").textContent = message || "";
+        document.getElementById("alertIconBox").textContent = icon || "ℹ️";
+        document.getElementById("customAlertModal").classList.remove("hidden");
+      }
+
+      function closeAlertModal() {
+        document.getElementById("customAlertModal").classList.add("hidden");
+      }
+
+      /**
+       * إشعار توست (Toast) مؤقت
+       */
+      let toastTimer = null;
+      function showToast(text, type) {
+        const toast = document.getElementById("toastNotification");
+        const toastText = document.getElementById("toastText");
+        const toastIcon = document.getElementById("toastIcon");
+
+        toastText.textContent = text;
+        toastIcon.textContent = type === "error" ? "❌" : "✅";
+
+        toast.classList.remove("translate-y-20", "opacity-0");
+        toast.classList.add("translate-y-0", "opacity-100");
+
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(function () {
+          toast.classList.remove("translate-y-0", "opacity-100");
+          toast.classList.add("translate-y-20", "opacity-0");
+        }, 3200);
+      }
+
+      /**
+       * تهيئة الصفحة عند اكتمال التحميل
+       */
+      window.addEventListener("DOMContentLoaded", function () {
+        selectPaper("social");
+      });
+    </script>
+  </body>
+</html>
